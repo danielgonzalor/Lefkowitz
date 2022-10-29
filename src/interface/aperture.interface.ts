@@ -1,4 +1,4 @@
 export interface ParamsCalculateAperture {
-    aperture: number;
-    realMagnification: number;
-} 
+  aperture: number;
+  realMagnification: number;
+}
