@@ -3,6 +3,9 @@ import { centimetersToMicron } from './helper/centimeters-to-micron';
 
 import { calculateDofCm } from './helper/dof';
 import { Formules } from './helper/formule.enum';
+export { CircleOfConfusion } from './helper/formule.enum';
+
+
 import { calculateRealMagnificationFinite } from './helper/magnification';
 import {
   FormuleLefkowitz,
@@ -18,6 +21,7 @@ import {
  * @param overlap  - overlap between pictures 0 to 100%
  * @returns ResultFormuleLefkowitz
  */
+
 export const Lefkowitz = ({
   lensMagnification,
   aperture,

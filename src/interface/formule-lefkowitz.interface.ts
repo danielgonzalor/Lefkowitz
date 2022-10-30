@@ -1,9 +1,9 @@
-import { coc } from '../helper/formule.enum';
+import { CircleOfConfusion } from '../helper/formule.enum';
 
 export interface FormuleLefkowitz {
   lensMagnification: number;
   aperture: number;
-  typeSensor: number;
+  typeSensor: CircleOfConfusion;
   extension: number;
   focalDistance: number;
   overlap: number;
@@ -13,7 +13,7 @@ export interface ResultFormuleLefkowitz {
   lensMagnification: number;
   aperture: number;
   fEffective: number;
-  typeSensor: coc;
+  typeSensor: CircleOfConfusion;
   extension: number;
   focalDistance: number;
   realMagnification: number;

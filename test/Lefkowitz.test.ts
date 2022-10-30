@@ -1,4 +1,4 @@
-import { coc } from '../src/helper/formule.enum';
+import { CircleOfConfusion } from '../src/helper/formule.enum';
 import { Lefkowitz } from '../src/index';
 describe('Lefkowitz', () => {
   it('Amscope 4x 0.17 - sensor aps-c - extension 160mm', () => {
@@ -9,7 +9,7 @@ describe('Lefkowitz', () => {
       lensMagnification: 4,
       overlap: 10,
       realMagnification: 4,
-      typeSensor: coc.apsc,
+      typeSensor: CircleOfConfusion.apsc,
     };
     const result = Lefkowitz(lens);
     expect(result.realMagnification).toEqual(4);
