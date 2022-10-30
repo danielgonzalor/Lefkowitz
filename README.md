@@ -1,12 +1,13 @@
 # Formule Lefkowitz
 
-## Introducción
+La profundidad de campo es algo que los fotógrafos usamos como una herramienta para conseguir distintos resultados, podemos configurar una muy amplia con el fin tener mas detalles o muy reducida desenfocando el fondo que queda tan bien en los retratos, si queremos aproximarnos a esos detalles entre 2x a 5x es complejo, tan complejo que cuando  nos aproximamos demasiado con el lente la profundidad de campo se ve reducida drásticamente.
 
-La profundidad de campo es algo que los fotógrafos usamos como una herramienta para conseguir distintos resultados, podemos configurar una muy amplia con el fin tener  mas detalles como en los paisajes o muy reducida desenfocando el fondo para retratos, si queremos ir por mas detalles es complejo, tanto que cuando  nos aproximamos demasiado con el lente la profundidad de campo se ve reducida drásticamente.
+Nosotros como apasionados de los detalles buscamos lo que nuestros ojos apenas pueden ver, amplificarlo, llevarlos cual obras de arte ante los ojos de de aquellos que tendrán el honor de obsérvalos como nunca antes podrían haberlo hecho, pero entre mas queremos ver esos detalles, mas debemos acercarnos, entre mas nos acercamos, menos profundidad de campo tenemos, esto es tan asi que en una magnificación de 4x al enfocar un insecto como un zancudo con suerte podremos obtener detalle en una pequeña parte de su ojo. 
 
-Nosotros como apasionados de esos detalles buscamos como sacar lo que nuestros ojos apenas pueden ver, llevarlos tal cual obras de arte ante los ojos de de aquellos que tendrán el honor de obsérvalos como nunca antes podrían haberlo hecho, pero como dije: entre mas queremos ver esos detalles, mas debemos acercarnos y entre mas nos acercamos menos profundidad de campo tenemos, esto es tan asi que en una magnificación de 4x al enfocar un insecto como un zancudo con suerte podremos obtener detalle en una pequeña parte de su ojo. 
+Una de las mejores formas de adquirir detalles sin perder calidad es usando una técnica de apilado, esta consiste en tomar muchas fotos y usar un programa para unirlas, tomando las parte mas enfocada de cada creando una sola imagen y es ahi donde inicia una de las mas grandes preguntas en esta disciplina:
 
-Una de las mejores formas de adquirir detalles sin perder calidad es usando una técnica de apilado, esta consiste en tomar muchas fotos y usar un programa para unirlas, usando las parte mas enfocada de cada una para crear una sola imagen, es ahi donde inicia una de las grandes preguntas en esta disciplina, ¿cuantas fotos debo tomar? la respuesta es clara:  no sabemos, pero podemos calcularlo solo necesitamos unos cuantos datos:
+ ## ¿cuantas fotos debo tomar? 3
+ ###  la respuesta es clara:  no sabemos, pero podemos calcularlo solo necesitamos unos cuantos datos:
 
 ## Información del lente.
 - magnificación
