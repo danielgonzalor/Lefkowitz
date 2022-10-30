@@ -9,7 +9,7 @@ describe('Lefkowitz', () => {
       lensMagnification: 4,
       overlap: 10,
       realMagnification: 4,
-      typeSensor: coc.apsc
+      typeSensor: coc.apsc,
     };
     const result = Lefkowitz(lens);
     expect(result.realMagnification).toEqual(4);
