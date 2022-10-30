@@ -6,8 +6,8 @@ Nosotros como apasionados de los detalles buscamos lo que nuestros ojos apenas p
 
 Una de las mejores formas de adquirir detalles sin perder calidad es usando una técnica de apilado, esta consiste en tomar muchas fotos y usar un programa para unirlas, tomando las parte mas enfocada de cada creando una sola imagen y es ahi donde inicia una de las mas grandes preguntas en esta disciplina:
 
- ## ¿cuantas fotos debo tomar? 3
- ###  la respuesta es clara:  no sabemos, pero podemos calcularlo solo necesitamos unos cuantos datos:
+ ## ¿cuantas fotos debo tomar? 
+la respuesta es clara:  no sabemos, pero podemos calcularlo solo necesitamos unos cuantos datos:
 
 ## Información del lente.
 - magnificación
