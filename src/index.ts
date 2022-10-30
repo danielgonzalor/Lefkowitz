@@ -3,14 +3,13 @@ import { centimetersToMicron } from './helper/centimeters-to-micron';
 
 import { calculateDofCm } from './helper/dof';
 import { Formules } from './helper/formule.enum';
-export { CircleOfConfusion } from './helper/formule.enum';
-
 
 import { calculateRealMagnificationFinite } from './helper/magnification';
 import {
   FormuleLefkowitz,
   ResultFormuleLefkowitz,
 } from './interface/formule-lefkowitz.interface';
+export { CircleOfConfusion } from './helper/formule.enum';
 /**
  *
  * @param lensMagnification - magnification lens 1x,2x,4x etc

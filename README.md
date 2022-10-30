@@ -1,104 +1,53 @@
-# TSDX User Guide
+# Formule Lefkowitz
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+## Introducción
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+La profundidad de campo es algo que a los fotógrafos nos complica la vida y a la vez nos apasiona, con ella podemos jugar, aveces queremos ir por una profundad de campo muy amplia con el fin obtener mas detalles como en los  paisajes o muy poca para obtener un fondo desenfocado en retratos, la profundidad de campo se hace mas compleja cuando queremos buscar esos detalles y nos  debemos aproximar demasiado con el lente, tanto que la profundidad de campo se ve afectada drásticamente.
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+Nosotros como apasionados de las detalles buscamos formas de sacar lo que nuestros ojos apenas pueden ver y llevarlos como obras de arte ante los ojos de de aquellos que tendrán el honor de observar esos pequeños detalles como nunca antes podrían haberlos visto, pero como anteriormente mencioné, entre mas queremos ver esos detalles, mas debemos acercarnos, entre mas nos acercamos, menos profundidad de campo tenemos, esto es tan asi que en una ampliación de 4x al enfocar un insecto con suerte podemos tomar con detalles  una pequeña parte de su ojo.
 
-## Commands
+Una de las mejores formas de obtener esos detalles sin perder calidad es usando una técnica de apilado, esta consiste en tomar muchas fotos y usar un programa para unirlas y tomar la parte que enfocada de cada una y componer una sola imagen,  y es ahi donde inicia una de las grandes preguntas en esta disciplina, ¿cuantas fotos debo tomar? la respuesta es clara no sabemos, pero podríamos, solo necesitamos unos cuantos datos:
 
-TSDX scaffolds your new library inside `/src`.
+## Información del lente.
+- magnificación
+- apertura
+- distancia 
 
-To run TSDX, use:
+## Información de la cámara
+- tipo sensor
+## Información de la distancia entre el lente y el sensor
+- del circulo de confusion   - este valor se encuentra según el tamaño del sensor  aps-c, full frame, etc.
 
-```bash
-npm start # or yarn start
+
+## Formula
+
+``` math
+Profundidad = 2 * CoC * f* ((m+1)/(m*m))
+
+CoC = Círculo de Confusión
+m = magnificación real (1X, 2X, etc.)
+f = abertura (f2.8, f4, etc.)
 ```
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
+## implementación
 
-To do a one-off build, use `npm run build` or `yarn build`.
+``` ts
 
-To run tests, use `npm test` or `yarn test`.
+import {CircleOfConfusion, Lefkowitz } from "formule-lefkowitz"
 
-## Configuration
+const aperture = 0.17;
+const extension = 160;
+const focalDistance = 160;
+const lensMagnification  = 4;
+const overlap = 10;
+const typeSensor = CircleOfConfusion.apsc;
+const result  = Lefkowitz({
+    aperture,
+    extension,
+    focalDistance,
+    lensMagnification,
+    overlap,
+    typeSensor,
+})
 
-Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adjust the respective fields in `package.json` accordingly.
-
-### Jest
-
-Jest tests are set up to run with `npm test` or `yarn test`.
-
-### Bundle Analysis
-
-[`size-limit`](https://github.com/ai/size-limit) is set up to calculate the real cost of your library with `npm run size` and visualize the bundle with `npm run analyze`.
-
-#### Setup Files
-
-This is the folder structure we set up for you:
-
-```txt
-/src
-  index.tsx       # EDIT THIS
-/test
-  blah.test.tsx   # EDIT THIS
-.gitignore
-package.json
-README.md         # EDIT THIS
-tsconfig.json
 ```
-
-### Rollup
-
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
-
-### TypeScript
-
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
-
-## Continuous Integration
-
-### GitHub Actions
-
-Two actions are added by default:
-
-- `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
-- `size` which comments cost comparison of your library on every pull request using [`size-limit`](https://github.com/ai/size-limit)
-
-## Optimizations
-
-Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
-
-```js
-// ./types/index.d.ts
-declare var __DEV__: boolean;
-
-// inside your code...
-if (__DEV__) {
-  console.log('foo');
-}
-```
-
-You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
-
-## Module Formats
-
-CJS, ESModules, and UMD module formats are supported.
-
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
-
-## Named Exports
-
-Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
-
-## Including Styles
-
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
-
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
-
-## Publishing to NPM
-
-We recommend using [np](https://github.com/sindresorhus/np).
-# Lefkowitz
