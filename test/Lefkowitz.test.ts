@@ -7,11 +7,9 @@ describe('Lefkowitz', () => {
       extension: 160,
       focalDistance: 160,
       lensMagnification: 4,
-      overlap: 1,
+      overlap: 10,
       realMagnification: 4,
-      typeSensor: coc.apsc,
-      fEffective: 0,
-      depthOfFieldMicron: 0,
+      typeSensor: coc.apsc
     };
     const result = Lefkowitz(lens);
     expect(result.realMagnification).toEqual(4);
