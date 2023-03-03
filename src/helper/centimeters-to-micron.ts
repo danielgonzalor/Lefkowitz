@@ -10,16 +10,12 @@ La función utiliza Math.round para redondear el resultado a la cantidad más ce
 */
 export let centimetersToMicron = (centimeters: number): number => {
   if (centimeters < 0) {
-    throw Error(
-      `[${CentimeterToMicron}] Error invalid centimeters, greater than number 0`
-    );
+    centimeters = 0
   }
   const micron = Math.round(centimeters * 10000);
 
   if (isNaN(micron)) {
-    throw Error(
-      `[${CentimeterToMicron}] Error invalid centimeters, greater than number 0`
-    );
+   return 0
   }
 
   return micron;
