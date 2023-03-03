@@ -1,5 +1,3 @@
-import { CentimeterToMicron } from '../vo/enum/error.enum';
-
 export const functions = 'CentimeterToMicron';
 /**
 
