@@ -5,5 +5,4 @@ describe('Test centimeters to micron', () => {
     const value = centimetersToMicron(1);
     expect(value).toEqual(10000);
   });
-
 });
