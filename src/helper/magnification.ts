@@ -1,12 +1,19 @@
 import { ParamsCalculateRealMagnification } from '../interface/real-magnification.interface';
+
 /**
- * # Calculate extension witch  require according to the magnification
- * extension  = MagnificationRequire / lensMagnification * focalDistance
- * @param lensMagnification
- * @param extension
- * @param focalDistance
- * @returns realMagnification
- */
+
+Esta función calcula la magnificación real de un objeto en función de los parámetros especificados. 
+Estos parámetros son:
+
+- lensMagnification: la magnificación de la lente.
+- extension: la extensión del objetivo.
+- focalDistance: la distancia focal.
+
+La función toma estos parámetros como argumentos y devuelve un número con un decimal que representa 
+la magnificación real del objeto.
+
+*/
+
 export const calculateRealMagnificationFinite = ({
   lensMagnification,
   extension,

@@ -2,23 +2,23 @@ import { apertureEffectiveObjectiveMicroscope } from './helper/aperture';
 import { centimetersToMicron } from './helper/centimeters-to-micron';
 
 import { calculateDofCm } from './helper/dof';
-import { Formules } from './helper/formule.enum';
+import { Formules } from './vo/enum/formule.enum';
 
 import { calculateRealMagnificationFinite } from './helper/magnification';
-import {
-  FormuleLefkowitz,
-  ResultFormuleLefkowitz,
-} from './interface/formule-lefkowitz.interface';
-export { CircleOfConfusion } from './helper/formule.enum';
+
+import { FormuleLefkowitz } from './interface/formule-lefkowitz-input.interface';
+import { ResultFormuleLefkowitz } from './interface/formule-lefkowitz-result.interface';
+
+export { CircleOfConfusion } from './vo/enum/formule.enum';
 /**
- *
- * @param lensMagnification - magnification lens 1x,2x,4x etc
- * @param aperture - description of lens
- * @param typeSensor - camera information
- * @param extension - distance between lens to camera sensor
- * @param focalDistance - description of lens
- * @param overlap  - overlap between pictures 0 to 100%
- * @returns ResultFormuleLefkowitz
+
+El siguiente es una función que calcula el campo de profundidad de un lente de microscopio usando la fórmula de Lefkowitz. 
+Esta función recibe como parámetros los siguientes valores: lensMagnification, aperture, typeSensor, extension, focalDistance y overlap.
+Estos parámetros se usan para calcular la magnificación real del objetivo finito (realMagnification), 
+el diámetro efectivo del objetivo del microscopio (fEffective) y el campo de profundidad en centímetros (depthOfFieldCentimeters).
+Finalmente, se convierte depthOfFieldCentimeters a micrones (depthOfFieldMicron) y se devuelve un objeto con los valores calculados
+junto con los parámetros iniciales.
+
  */
 
 export const Lefkowitz = ({
@@ -61,6 +61,5 @@ export const Lefkowitz = ({
     realMagnification,
     fEffective,
   };
-
   return lens;
 };
