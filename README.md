@@ -30,7 +30,7 @@ m = magnificación real (1X, 2X, etc.)
 f = abertura (f2.8, f4, etc.)
 ```
 
-## implementación
+## implementación TS
 
 ``` ts
 
@@ -50,5 +50,26 @@ const result  = Lefkowitz({
     overlap,
     typeSensor,
 })
+console.log(result)
+```
+## implementación JS
 
+```js
+var formuleLefkowitz = require("formule-lefkowitz")
+var  {CircleOfConfusion, Lefkowitz }  = require("formule-lefkowitz")
+const aperture = 0.17;
+const extension = 160;
+const focalDistance = 160;
+const lensMagnification  = 4;
+const overlap = 10;
+const typeSensor = CircleOfConfusion.apsc;
+const result  = Lefkowitz({
+    aperture,
+    extension,
+    focalDistance,
+    lensMagnification,
+    overlap,
+    typeSensor,
+})
+console.log(result)
 ```
