@@ -18,11 +18,11 @@ export const calculateDofCm = ({
   overlap,
 }: ParamsCalculateDof): number => {
   let overlapVo = new Overlap(overlap).value;
-  return (
-    2 *
-    typeSensor *
-    fEffective *
-    ((realMagnification + 1) / (realMagnification * realMagnification)) *
-    (overlapVo / 100)
-  );
+  let result =
+    (2 *
+      typeSensor *
+      fEffective *
+      ((realMagnification + 1) / (realMagnification * realMagnification))) /
+    10;
+  return result - (result / 100) * overlapVo;
 };
