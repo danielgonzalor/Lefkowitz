@@ -1,10 +1,10 @@
-import { CircleOfConfusion } from '../vo/enum/formule.enum';
+import { CIRCULO_OF_CONFUSION } from '../enum/circle-of-confusion';
 
-export interface ResultFormuleLefkowitz {
+export interface FormuleLefkowitzResult {
   lensMagnification: number;
   aperture: number;
   fEffective: number;
-  typeSensor: CircleOfConfusion;
+  CircleOfConfusion: CIRCULO_OF_CONFUSION;
   extension: number;
   focalDistance: number;
   realMagnification: number;

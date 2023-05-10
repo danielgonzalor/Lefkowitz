@@ -1,5 +1,5 @@
-export interface ParamsCalculateDof {
-  typeSensor: number;
+export interface ParamsDof {
+  CircleOfConfusion: number;
   realMagnification: number;
   fEffective: number;
   overlap: number;

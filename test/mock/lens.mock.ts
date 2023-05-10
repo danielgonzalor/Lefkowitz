@@ -1,4 +1,4 @@
-import { CircleOfConfusion } from '../../src';
+import { CIRCULO_OF_CONFUSION } from '../../src/enum/circle-of-confusion';
 import { FormuleLefkowitz } from '../../src/interface/formule-lefkowitz-input.interface';
 
 export const lensMock: FormuleLefkowitz = {
@@ -7,5 +7,5 @@ export const lensMock: FormuleLefkowitz = {
   focalDistance: 160,
   lensMagnification: 4,
   overlap: 10,
-  typeSensor: CircleOfConfusion.apsc,
+  CircleOfConfusion: CIRCULO_OF_CONFUSION.APS_C,
 };

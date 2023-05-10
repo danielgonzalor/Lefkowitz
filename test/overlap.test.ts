@@ -1,3 +1,4 @@
+import { ERRORS } from '../src/enum/error.enum';
 import { Overlap } from '../src/vo/overlap.vo';
 
 describe('Overlap', () => {
@@ -7,11 +8,11 @@ describe('Overlap', () => {
   });
   it('Overlap error data', () => {
     try {
-      const result = new Overlap(101);
-      expect(result.value).toEqual(101);
+      new Overlap(101);
     } catch (error) {
-      expect(error.message).toEqual(
-        'This number is invalid, value min 0 and value max 100'
+      expect(error).toHaveProperty(
+        'message',
+        ERRORS.CENTIMETER_TO_MICRON_ERROR
       );
     }
   });

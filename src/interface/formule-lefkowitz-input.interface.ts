@@ -1,9 +1,9 @@
-import { CircleOfConfusion } from '../vo/enum/formule.enum';
+import { CIRCULO_OF_CONFUSION } from '../enum/circle-of-confusion';
 
 export interface FormuleLefkowitz {
   lensMagnification: number;
   aperture: number;
-  typeSensor: CircleOfConfusion;
+  CircleOfConfusion: CIRCULO_OF_CONFUSION;
   extension: number;
   focalDistance: number;
   overlap: number;

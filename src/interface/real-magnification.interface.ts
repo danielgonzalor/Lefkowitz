@@ -1,4 +1,4 @@
-export interface ParamsCalculateRealMagnification {
+export interface ParamsRealMagnification {
   lensMagnification: number;
   extension: number;
   focalDistance: number;

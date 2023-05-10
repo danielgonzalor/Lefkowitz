@@ -1,0 +1,4 @@
+export enum CONTEXT_ERROR {
+  APERTURE = 'APERTURE',
+  OVERLAP = 'OVERLAP',
+}
